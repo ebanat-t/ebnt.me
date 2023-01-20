@@ -17,11 +17,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #eddcb5;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #e8c67c;
 }
 
 body {
@@ -35,6 +35,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  filter: drop-shadow(7px 10px 1px rgba($color: #1c1b1b, $alpha: .7));
 }
 
 button {
@@ -67,18 +68,50 @@ button:focus-visible {
   text-align: center;
 }
 
+.profile-card {
+  background-color: #332e2f;
+  padding: 2em;
+  border-radius: 1.3em;
+  box-shadow: 7px 10px 1px 4px rgba($color: #1c1b1b, $alpha: .6);
+}
+
 .link-v-container {
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
   align-items: center;
+  a {
+    margin: 0.1em;
+  }
+}
+/*
+.sns-link-wrapper {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 14rem;
+}
+*/
 
+.profile-img-shadow {
+  transition: all 0.4s ease;
+}
+
+.profile-img-shadow:hover {
+  filter: drop-shadow(0 0 20px rgba(194, 187, 161, 0.6));
 }
 
 .profile-img {
   width: 150;
   height: 150px;
   clip-path: circle(75px at center);
+}
+
+.message {
+  font-weight: 500;
+  margin-bottom: 2em;
+  margin-top: 0em;
 }
 
 @media (prefers-color-scheme: light) {
@@ -92,4 +125,5 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  
 }
